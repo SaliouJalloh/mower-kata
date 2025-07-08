@@ -1,4 +1,6 @@
-package com.mowitow.mower;
+package com.mowitow.mower.domain;
+
+import com.mowitow.mower.domain.enums.Direction;
 
 /**
  * Représente une position (x, y) sur la pelouse

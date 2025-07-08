@@ -1,4 +1,4 @@
-package com.mowitow.mower;
+package com.mowitow.mower.domain.enums;
 
 /**
  * Énumération des commandes possibles pour la tondeuse

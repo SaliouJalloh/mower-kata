@@ -1,4 +1,4 @@
-package com.mowitow.mower;
+package com.mowitow.mower.service;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;

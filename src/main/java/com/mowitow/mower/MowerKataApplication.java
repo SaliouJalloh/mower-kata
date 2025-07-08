@@ -1,5 +1,7 @@
 package com.mowitow.mower;
 
+import com.mowitow.mower.service.MowerSimulator;
+
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;

@@ -1,5 +1,9 @@
-package com.mowitow.mower;
+package com.mowitow.mower.infrastructure;
 
+import com.mowitow.mower.config.MowerConfiguration;
+import com.mowitow.mower.domain.MowerInstruction;
+import com.mowitow.mower.domain.enums.Direction;
+import com.mowitow.mower.domain.Position;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
 import java.io.IOException;

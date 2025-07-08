@@ -28,21 +28,32 @@ Ce projet implémente le célèbre **Kata de la Tondeuse Automatique** - un exer
 src/
 ├── main/java/com/mowitow/mower/
 │   ├── MowerKataApplication.java    # Point d'entrée
-│   ├── MowerSimulator.java          # Orchestrateur principal
-│   ├── Mower.java                   # La tondeuse elle-même
-│   ├── Lawn.java                    # La pelouse
-│   ├── Position.java                # Position (x, y)
-│   ├── Direction.java               # N, S, E, W
-│   ├── Command.java                 # A, G, D
-│   ├── MowerFileParser.java         # Parseur de fichiers
-│   └── MowerConfiguration.java      # Configuration
-└── test/java/com/mowitow/mower/
-    ├── IntegrationTest.java         # Tests d'intégration
-    ├── MowerTest.java               # Tests de la tondeuse
-    ├── DirectionTest.java           # Tests des directions
-    ├── PositionTest.java            # Tests des positions
-    └── ... (autres tests)
+│   ├── config/                      # Configuration
+│   │   └── MowerConfiguration.java
+│   ├── domain/                      # Cœur métier
+│   │   ├── Command.java            # Commandes (A, G, D)
+│   │   ├── Direction.java          # Directions (N, S, E, W)
+│   │   ├── Lawn.java              # La pelouse
+│   │   ├── Mower.java             # La tondeuse
+│   │   ├── MowerInstruction.java   # Instructions de la tondeuse
+│   │   ├── MowerPosition.java      # Position et orientation
+│   │   └── Position.java          # Coordonnées (x, y)
+│   ├── infrastructure/             # Adaptateurs techniques
+│   │   └── MowerFileParser.java    # Lecture des fichiers
+│   └── service/                    # Services applicatifs
+│       └── MowerSimulator.java     # Orchestrateur principal
+└── test/java/com/mowitow/mower/    # Tests unitaires et d'intégration
+    ├── domain/
+    ├── infrastructure/
+    ├── service/
+    └── MowerKataApplicationTests.java
 ```
+
+Cette structure suit une architecture en couches avec :
+- `domain` : Les classes métier qui représentent le cœur de l'application
+- `service` : Les services qui orchestrent les cas d'utilisation
+- `infrastructure` : Les adaptateurs techniques (parseur de fichiers)
+- `config` : La configuration de l'application
 
 ## 🚀 Comment utiliser
 

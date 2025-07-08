@@ -1,4 +1,4 @@
-package com.mowitow.mower;
+package com.mowitow.mower.domain.enums;
 
 /**
  * Énumération des directions cardinales possibles pour la tondeuse

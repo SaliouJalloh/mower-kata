@@ -1,5 +1,6 @@
-package com.mowitow.mower;
+package com.mowitow.mower.domain;
 
+import com.mowitow.mower.domain.enums.Direction;
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.*;
 

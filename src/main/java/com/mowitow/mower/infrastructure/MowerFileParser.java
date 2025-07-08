@@ -1,4 +1,9 @@
-package com.mowitow.mower;
+package com.mowitow.mower.infrastructure;
+
+import com.mowitow.mower.config.MowerConfiguration;
+import com.mowitow.mower.domain.*;
+import com.mowitow.mower.domain.enums.Command;
+import com.mowitow.mower.domain.enums.Direction;
 
 import java.io.BufferedReader;
 import java.io.IOException;

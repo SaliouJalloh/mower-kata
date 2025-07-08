@@ -1,4 +1,7 @@
-package com.mowitow.mower;
+package com.mowitow.mower.config;
+
+import com.mowitow.mower.domain.Lawn;
+import com.mowitow.mower.domain.MowerInstruction;
 
 import java.util.List;
 

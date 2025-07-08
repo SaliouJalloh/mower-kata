@@ -1,4 +1,6 @@
-package com.mowitow.mower;
+package com.mowitow.mower.domain;
+
+import com.mowitow.mower.domain.enums.Command;
 
 import java.util.List;
 

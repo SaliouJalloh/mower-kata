@@ -1,4 +1,4 @@
-package com.mowitow.mower;
+package com.mowitow.mower.domain;
 
 /**
  * Représente la pelouse rectangulaire sur laquelle évolue la tondeuse
