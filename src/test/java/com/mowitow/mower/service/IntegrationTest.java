@@ -74,7 +74,7 @@ class IntegrationTest {
         List<String> results = simulator.simulateFromFile(testFile);
         
         assertThat(results).hasSize(1);
-        assertThat(results.get(0)).isEqualTo("2 2 N");
+        assertThat(results.getFirst()).isEqualTo("2 2 N");
     }
     
     @Test

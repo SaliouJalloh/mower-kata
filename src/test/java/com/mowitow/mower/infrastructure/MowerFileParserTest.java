@@ -34,7 +34,7 @@ class MowerFileParserTest {
         assertThat(config.getMowerInstructions()).hasSize(2);
         
         // Première tondeuse
-        MowerInstruction first = config.getMowerInstructions().get(0);
+        MowerInstruction first = config.getMowerInstructions().getFirst();
         assertThat(first.getInitialPosition().getPosition()).isEqualTo(new Position(1, 2));
         assertThat(first.getInitialPosition().getDirection()).isEqualTo(Direction.NORTH);
         assertThat(first.getCommands()).hasSize(9);
